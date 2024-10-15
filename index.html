@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="stylee.css">
+    <title>jogo de Traduções</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Memorization</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/YagoCardoso23" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yago-cardoso-2a2046240/" class="icon" target=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <button id="botao-comecar" onclick="jogar()">start </button>
+
+                <p id="pergunta"></p>
+        
+                <input type="text" id="resposta" placeholder="Digite sua resposta" style="display:none;" />
+                
+                <button id="botao-enviar" onclick="verificarResposta()" style="display:none;">Enviar Resposta</button>
+                <p id="feedback" class="feedback"></p>
+                <p id="resultado-final" class="feedback"></p>
+                
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Welcome!</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/YagoCardoso23" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yago-cardoso-2a2046240/" class="icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span> </span>
+                <input type="text" id="resposta" placeholder="Digite sua resposta" style="display:none;" />
+              
+               
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome!</h1>
+                    <p>Get as many words right as you can!</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>This is a memorization game</h1>
+                    <p>  </p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
